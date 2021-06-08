@@ -106,9 +106,9 @@ function collectAttributes(model, defaults, element) {
     spec = model[key];
 
     if (typeof spec === 'undefined')
-      attr[key] = dataElement.textContent.trim();
+      attr[key] = dataElement.textContent;
     else
-      attr[spec.name] = spec.cast(dataElement.textContent.trim());
+      attr[spec.name] = spec.cast(dataElement.textContent);
   }
 
   for (key in defaults) {
