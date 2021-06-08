@@ -12,6 +12,7 @@
   "scripts": {
     "lint": "eslint ./**/*.js",
     "prepublish": "npm run lint && npm test",
+    "prepublishOnly": "npm run prepublish",
     "test:browser": "mocha ./test/browser/endpoint.js",
     "test": "npm run test:browser"
   },
@@ -35,8 +36,8 @@
   "homepage": "https://github.com/graphology/graphology-graphml#readme",
   "devDependencies": {
     "@yomguithereal/eslint-config": "^4.0.0",
-    "eslint": "^7.14.0",
-    "graphology": "^0.19.2",
+    "eslint": "^7.28.0",
+    "graphology": "^0.19.3",
     "mocha": "^8.2.1"
   },
   "eslintConfig": {
@@ -46,8 +47,8 @@
     }
   },
   "dependencies": {
-    "graphology-utils": "^1.8.0",
-    "xmldom": "^0.4.0",
-    "xml-writer": "^1.7.0"
+    "graphology-utils": "^2.1.0",
+    "xml-writer": "^1.7.0",
+    "xmldom": "^0.4.0"
   }
 }
